@@ -26,6 +26,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>11.0.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -48,7 +53,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.tictactoe/com.tictactoe.HelloApplication</mainClass>
+                            <mainClass>com.tictactoe/com.tictactoe.TicTacToe</mainClass>
                         </configuration>
                     </execution>
                 </executions>
