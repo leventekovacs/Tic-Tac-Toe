@@ -44,8 +44,6 @@ public class GameController implements Initializable {
 
     private String winner;
 
-
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         container.setOpacity(0.1);
@@ -113,11 +111,7 @@ public class GameController implements Initializable {
         int colIndex = (int) (Math.random() * 3);
         int rowIndex = (int) (Math.random() * 3);
         Cell selectedCell = cells[rowIndex][colIndex];
-        if(selectedCell.isMarked()) {
-            return aiSelectRandomCell();
-        } else {
-            return cells[rowIndex][colIndex];
-        }
+        return selectedCell.isMarked()  ? aiSelectRandomCell() : cells[rowIndex][colIndex];
     }
 
     //Returns the cell that prevent player win or win the game
