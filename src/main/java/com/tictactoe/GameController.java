@@ -1,6 +1,5 @@
 package com.tictactoe;
 
-import com.tictactoe.component.Cell;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;

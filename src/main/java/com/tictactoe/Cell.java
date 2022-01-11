@@ -1,4 +1,4 @@
-package com.tictactoe.component;
+package com.tictactoe;
 
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
